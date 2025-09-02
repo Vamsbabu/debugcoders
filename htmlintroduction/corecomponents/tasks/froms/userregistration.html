@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration form</title>
+</head>
+
+<body>
+
+    <!-- user registration form starts here-->
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        
+        }
+        input{
+            margin-inline-start: 14%;
+            background-color: rgb(89, 172, 223);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+            padding: 20px;
+            margin: auto;
+            width: 50%; 
+            background-color: #f9f9f9;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            background-color: #e0ede0;
+            color: rgb(26, 25, 25);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+     </style>
+
+    <h1> User Registration Form </h1>
+
+
+    <form>
+        <fieldset>
+            <legend  > personal information </legend>
+            <label  for="name">Name:</label>
+            <input type="text" id="name" name="username" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+    </form> 
+    </fieldset>
+    <form>
+        <fieldset>
+            <legend> Address details </legend>
+            <label for="Address line one">Adress line one:</label>
+            <input type="text" id="address line one"  required><br><br>
+            <label for="address line Two">Address line Two:</label> 
+         <input type="text" id="address line Two"  required><br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+            <label for="zip / post code"> zip / post code:</label>
+            <input type="text" id="zip / post code" name="zip / post code" required><br><br>
+       
+ <input type="button" value="Signup" style="margin-left: 10%;">
+   </fieldset>
+    </form>
+
+</body>
+
+</html>

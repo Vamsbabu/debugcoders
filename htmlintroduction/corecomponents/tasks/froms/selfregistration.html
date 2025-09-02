@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>self registration form </title>
+</head>
+
+<body >
+
+    <!-- self registration form starts here-->
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+           
+            hr{
+                border: 1px solid rgb(33, 33, 33);
+                width: 100%;
+                margin-inline-start: 0%;    
+                margin-inline-end: 0%;  
+
+                }
+                
+
+            lable{
+                display: inline-block;
+                width: 250px;
+                margin-bottom: 10px;
+            }
+            
+           form {
+            border: 3px solid #f1f1f1;
+            padding: 20px;
+            margin: auto;
+            width: 50%;
+            
+            input{
+                margin-inline-start: 14%;
+            }
+         
+
+
+
+            
+            
+            background-color: rgb(248, 251, 253);
+            h1{
+                margin-inline-start: 17%;
+                color: rgb(13, 13, 13);
+            }
+            
+           } 
+        }
+
+        label {
+            display: inline-block;
+            width: 250px;
+            margin-bottom: 10px;    
+
+
+            
+        }
+         
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="register"]
+    {         background-color: #a198e9;
+            color: rgb(3, 18, 22);
+            padding: 10px 15px;
+            border:rgb(17, 17, 18);
+            border-radius: 4px;
+            cursor: pointer;
+            margin-inline-start: 10%;
+        }
+        input[type="button"] {
+            background-color: #f1fbf1;
+            color: rgb(3, 18, 22);
+            padding: 10px 15px;
+            border:blueviolet;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+      input[type="button"]:hover {
+            background-color: #455dd9;
+        } 
+
+       
+        
+     </style>
+   
+
+<form>
+    <h1> Self Registration- Enter User Details</h1>
+   <hr>
+    <p>
+        note : enter user details and click register to access the workgroup user ID ,password,lastname or,
+        first name , and email are required fields..
+    </p>
+    <label for="user id"> User ID</label>
+    <input  type="text" id="userid" maxlength="20" required style="width: 20%; height: 25px;"><br><br>
+    <lable for="password"> Password</lable>
+    <input   type="password" id="password" maxlength="20" required style="width: 20%; height: 25px;" ><br><br>
+    <lable for="confirmpassword"> Confirm Password</lable>
+    <input  type="password" id="confirmpassword" maxlength="20" required style="width: 20%; height: 25px;" ><br><br>
+    <label for="firstname"> FirstName</label>
+    <input type="text" id="firstname" maxlength="50" required style="width: 20%; height: 25px;"><br><br>
+    <label for="lastname"> LastName</label>
+    <input type="text" id="lastname" maxlength="50" required style="width: 20%; height: 25px;"><br><br>
+    <label for="email"> Email ID </label>
+    <input type="email" id="email" maxlength="50" required style="width: 20%; height: 25px;"> <br><br>
+    <label for="companyname"> Company Name</label>
+    <input type="text" id="companyname" maxlength="50" style="width: 20%; height: 25px;"><br><br>
+    <lable for="phonenumber"> Phone Number</lable>
+    <input type="tel" id="phonenumber" maxlength="10" minlength="10" required style="width: 20%; height: 25px;"><br><br>
+    <lable for="faxnumber"> Fax Number</lable>
+    <input type="tel" id="faxnumber" maxlength="10" minlength="10" required style="width: 20%; height: 25px;"><br><br>
+    <lable for="address"> Address1</lable>
+    <input type="text" id="address" maxlength="100" style="width: 20%; height: 50px;"><br><br>
+    <label for="address2"> Address2</label>
+    <input type="text" id="address2" maxlength="100" style="width: 20%; height: 50px;"><br><br>
+    <label for="city"> City</label>     
+    <input type="text" id="city" maxlength="50" style="width: 20%; height: 25px;"><br><br>
+    <label for="state"> State/Province</label>
+    <input type="text" id="state" maxlength="50" style="width: 20%; height: 25px;"><br><br>
+    <label for="zip"> Zip/Postal Code</label>
+    <input type="text" id="zip" maxlength="10" style="width: 20%; height: 25px;"><br><br>
+    <label for="country"> Country</label>
+    <input type="text" id="country" maxlength="50" style="width: 20%; height: 25px;"><br><br>
+    <label for="comments"> Comments</label>
+    <input id="comments" rows="4" cols="50" maxlength="500" style="width: 20%; height: 25px;"></textarea><br><br>
+    <input type="button" value="register"  >  
+    <input type="button" value="cancle" >
+<!-- self registration form ends here-->
+</form>
+</table>
+
+
+</body>
+
+</html>

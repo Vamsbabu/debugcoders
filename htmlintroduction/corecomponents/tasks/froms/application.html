@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application page</title>
+</head>
+
+<body >
+    <!-- application form starts here-->
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+
+            
+    
+            
+           form {
+            border: 3px solid #f1f1f1;
+            padding: 20px;
+            margin: auto;
+            width: 50%; 
+            background: linear-gradient(to top, #ec62be, #62c3fc);
+            h1{
+                margin-inline-start: 17%;
+                color: rgb(13, 13, 13); 
+            }
+            hr{
+                border: 1px solid rgb(255, 252, 252);
+                }
+           } 
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+            
+        }
+         
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #f1fbf1;
+            color: rgb(3, 18, 22);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+input[type="reset"] {
+            background-color: #e8e5e5;
+            color: rgb(0, 0, 0);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #dae1da;
+        }
+     </style>
+     <form>
+    <label for="firstname"> FirstName</label>
+    <input type="text" id="firstname"> (max 50 characters allowed)<br><br>
+    <label for="lastname"> LastName</label>
+    <input type="text" id="lastname"> (max 50 characters allowed) <br><br>
+    <label for="email"> Email ID </label>
+    <input type="email" id="email"> <br><br>
+    <label for="mobile"> Mobile Number</label>
+    <input type="tel" id="mobile" maxlength="10" minlength="10"> (10 digits allowed) <br><br>
+    <label for="dob"> Date of Birth (DOB)</label>
+    <select id="dob_day"> 
+        <option value="">Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+    </select>
+    <select id="dob_month">
+        <option value="">Month</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+    <select id="dob_year">
+        <option value="">Year</option>
+        <option value="1990">1990</option>
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+        <option value="1995">1995</option>
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+    </select> <br><br>
+    <label for="address"> Address</label>
+    <input type="text" id="address"  style="width: 30%; height: 150px;">  <br><br>
+    <label for="city"> City</label>
+    <input type="text" placeholder="hyderbad">(max 50 characters allowed) <br><br>
+    <label for="zip"> Zip Code</label>
+    <input type="text" placeholder="523166" maxlength="6" minlength="6">  ( max 6 Number allowed )<br><br>
+    <label for="state"> State</label>
+    <input type="text" placeholder="TG">(max 50 characters allowed) <br><br>
+    <label for="country"> Country</label>
+    <input type="text" placeholder="country"> <br><br>
+    <lable style="margin-inline-end: 12%;" for="hobbies"> Hobbies</lable>
+    <input type="checkbox" id="drawing" name="hobbies" value="drawing">
+    <label  for="drawing">Drawing</label>
+    <input  type="checkbox" id="dancing" name="hobbies" value="dancing">
+    <label for="dancing">Dancing</label>        
+    <input type="checkbox" id="singing" name="hobbies" value="singing">
+    <label for="singing">Singing</label> 
+    <input style="margin-inline-start: 21%;" type="checkbox" id="sketching" name="hobbies" value  ="sketching"> 
+    <label  for="sketching">Sketching</label> 
+    <label for="other"> other</label>
+    <input type="text"   style="width: 100px;;" placeholder= "ex teaching" > <br><br>
+    <label for="qualification"> Qualification</label>
+    <input type="checkbox" id="ssc" name="qualification" value="ssc">
+    <label for="ssc"> high school (SSC)</label> <br>
+    <input style="margin-inline-start: 21%;" type="checkbox" id="intermediate" name="qualification" value="intermediate">
+    <label  for="intermediate"> higher school</label> <br>
+    <input style="margin-inline-start: 21%;" type="checkbox" id="graduation" name="qualification" value="graduation">
+    <label  for="graduation"> graduation (bachelors)</label> <br>
+    <input style="margin-inline-start: 21%;" type="checkbox" id="postgraduation" name="qualification" value="postgraduation">
+    <label  for="postgraduation"> post graduation (masters)</label> <br>
+    <input style="margin-inline-start: 21%;" type="checkbox" id="phd" name="qualification" value="phd">
+    <label  for="phd"> phd</label> <br><br>
+    <label for="course"> Course for application:</label>
+     <input type="radio" id="bca" name="course" value="bca">
+    <label for="BCA"> BCA</label> <br>
+    <input style="margin-inline-start: 21%;" type="radio" id="B.COM" name="Course" value="B.COM">
+    <label  for="B.COM"> B.COM</label> <br>
+    <input style="margin-inline-start: 21%;" type="radio" id="B.SC" name="Course" value="B.SC">
+    <label  for="BA"> BA</label> <br>
+    <input style="margin-inline-start: 21%;" type="radio" id="BA" name="Course" value="BA">
+    <label  for="MCA"> MCA</label> <br>
+    <input style="margin-inline-start: 21%;" type="radio" id="MCA" name="Course" value="MCA">
+    <label  for="M.COM"> M.COM</label> <br><br>
+    <input style="margin-inline-start: 21%;" type="radio" id="M.COM" name="Course" value="M.COM">
+    
+    <label  for="M.SC"> M.SC</label> <br><br>
+    
+
+
+    <input type="submit" value="Submit " style="margin-inline-start: 21%;">
+    <input type="reset" value="Reset ">
+    <!-- application form ends here-->
+     </form>
+</body>
+
+</html>
