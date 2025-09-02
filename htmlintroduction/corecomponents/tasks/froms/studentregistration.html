@@ -11,28 +11,38 @@
     
     <!-- student registration form starts here-->
      <style>
+        
         body {
+            width: 50%;
             font-family: Arial, sans-serif;
-            margin: 20px;
-            
-    
-            
-           form {
-            border: 3px solid #f1f1f1;
-            padding: 20px;
             margin: auto;
-            width: 50%; 
+            margin-top: 20px;
+            margin-bottom: 20px;
             
-            background-color: rgb(144, 188, 224);
-            h1{
-                margin-inline-start: 17%;
-                color: rgb(13, 13, 13);
+        
+
+            form{
+                border: 3px solid #f1f1f1;
+                padding: 20px;
+                margin: auto;
+                width: 100%;
+                background-color: rgb(149, 189, 249);
             }
-            hr{
-                border: 1px solid rgb(255, 252, 252);
-                }
-           } 
+             
+        
         }
+        
+       
+            h1{
+               border: 3px solid #f1f1f1;
+                padding: 20px;
+                margin: auto;
+                width: 100%;
+                background-color: rgb(73, 124, 199);
+                text-align: center;
+                
+            }
+              
 
         label {
             display: inline-block;
@@ -40,7 +50,11 @@
             margin-bottom: 10px;
             
         }
-         
+        
+
+             
+    
+        
         input[type="text"],
         input[type="email"],
         input[type="password"],
@@ -51,7 +65,10 @@
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
+          
         }
+        
+        
 
         input[type="submit"] {
             background-color: #20c620;
@@ -59,17 +76,24 @@
             padding: 10px 15px;
             border: none;
             border-radius: 4px;
+           
             cursor: pointer;
+        
         }
 
         input[type="submit"]:hover {
             background-color: #dae1da;
         }
+        
      </style>
     
 <from>
     <h1> STUDENT REGISTRATION FORM</h1>
-    <hr>
+    
+</from>
+
+    <div>
+        <form>
     <label for="firstname"> FirstName</label><br>
     <input type="text" placeholder="firstname" name="firstname" maxlength="50" required style="width: 100%;"> <br><br>
     <label for="middlename"> middlename</label> <br>
@@ -103,12 +127,12 @@
     <label for="repassword"> Re-type password</label><br>   
     <input type="password" placeholder="retype password" name="repassword" maxlength="20" required style="width: 100%;"> <br><br>
     <input type="submit" value="register" style="width: 100%;">
-
-    </form>
-    
+ </form>
+    </div>  
     <!-- student registration form ends here-->
 
 
 </body>
+
 
 </html>
